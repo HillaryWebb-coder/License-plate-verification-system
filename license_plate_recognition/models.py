@@ -13,6 +13,7 @@ class Profile(models.Model):
 
 class Log(models.Model):
 
+    user_profile = models.ForeignKey(Profile, verbose_name=_("User Details"), on_delete=models.CASCADE, blank=True, null=True)
     plate_number = models.CharField(_("Plate Number"), max_length=500, blank=True, null=True)
     offence = models.CharField(_("Offence"), max_length=500, blank=True, null=True)
     image = models.ImageField(_('Image'), upload_to='images/')
