@@ -13,6 +13,6 @@ class Profile(models.Model):
 
 class Log(models.Model):
 
-    plate_number = models.CharField(_("Plate Number"), max_length=500, blank=True)
+    plate_number = models.CharField(_("Plate Number"), max_length=500, blank=True, null=True)
     offence = models.CharField(_("Offence"), max_length=500, blank=True, null=True)
     image = models.ImageField(_('Image'), upload_to='images/')

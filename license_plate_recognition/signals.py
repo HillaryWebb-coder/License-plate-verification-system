@@ -11,7 +11,7 @@ def send_telegram_message(sender, instance, created, **kwargs):
     if created:
         image = instance.image.url
         # domain = Sites.object.get_current().domain
-        image_url = 'http://127.0.0.1:8000' + image
+        image_url = 'https://license-recognition-system.herokuapp.com' + image
         plate_number = IdentifyImage(image_url).getnumber()
 
         message = "Traffic Rule Violated!!!\nPLATE NUMBER: " + plate_number
