@@ -1,0 +1,1 @@
+web: gunicorn car_license_recognition.wsgi --log-file -

@@ -6,3 +6,9 @@ Pillow
 telegram-send
 opencv-python-headless
 requests
+dj-database-url
+django-heroku
+gunicorn
+psycopg2
+python-decouple
+whitenoise
