@@ -16,4 +16,4 @@ def CreateLog(request):
     else:
         form = LogForm()
     
-    return render('home.html', {'form': form})
+    return render(request, 'home.html', {'form': form})
