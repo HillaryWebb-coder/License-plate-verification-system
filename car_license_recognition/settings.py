@@ -40,14 +40,10 @@ INSTALLED_APPS = [
     'rest_framework',
     'license_plate_recognition',
     'api',
-    "rest_framework_api_key",
+    'rest_framework_api_key',
+    'versatileimagefield',
 ]
 
-REST_FRAMEWORK = {
-    "DEFAULT_PERMISSION_CLASSES": [
-        "rest_framework_api_key.permissions.HasAPIKey",
-    ]
-}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
