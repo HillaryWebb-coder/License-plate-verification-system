@@ -4,3 +4,4 @@ opencv-python
 django-rest-framework
 Pillow
 telegram-send
+python3-opencv
