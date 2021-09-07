@@ -20,5 +20,8 @@ class IdentifyImage:
     def getnumber(self):
         return self.number
 
+    def getimage(self):
+        return self.image
+
 
 # identifyImage(image).getnumber()
