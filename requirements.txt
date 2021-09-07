@@ -1,0 +1,6 @@
+django
+pytesseract
+opencv-python
+django-rest-framework
+Pillow
+telegram-send
