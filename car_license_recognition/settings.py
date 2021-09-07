@@ -40,8 +40,6 @@ INSTALLED_APPS = [
     'rest_framework',
     'license_plate_recognition',
     'api',
-    'rest_framework_api_key',
-    'versatileimagefield',
 ]
 
 
