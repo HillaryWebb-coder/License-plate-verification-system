@@ -1,0 +1,1 @@
+default_app_config = 'license_plate_recognition.apps.LicensePlateRecognitionConfig'

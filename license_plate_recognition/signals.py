@@ -4,13 +4,15 @@ from django.dispatch import receiver
 from .identification import IdentifyImage
 import telegram_send
 from .models import Log
+# from django.contrib.sites.models import Site
 
 @receiver(post_save, sender=Log)
 def create_user_profile(sender, instance, created, **kwargs):
     if created:
         image = instance.image.url
-        # plate_number = IdentifyImage(image).getNumber()
-        plate_number  = instance.image.url
-        telegram_send.send([instance.image.url,], parse_mode='text')
+        # domain = Sites.object.get_current().domain
+        image_url = 'http://127.0.0.1:8000' + image
+        plate_number = IdentifyImage(image_url).getnumber()
+        telegram_send.send(messages=[plate_number], parse_mode='text')
         instance.plate_number = plate_number
         instance.save()
