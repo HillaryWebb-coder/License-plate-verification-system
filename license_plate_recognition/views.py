@@ -3,7 +3,7 @@ from .models import Log
 from .forms import LogForm
 # Create your views here.
 
-def CreateLog(requests):
+def CreateLog(request):
 
     form = LogForm()
 
